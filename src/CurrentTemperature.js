@@ -12,11 +12,11 @@ export default function CurrentTemperature() {
         <div className="col-4 text-center">
           <span className="current-temperature">26</span>
           <span id="temp-type">
-            <a href="#" id="celsius-link" className="active">
+            <a href="/" id="celsius-link" className="active">
               °C
             </a>
             |
-            <a href="#" id="fahrenheit-link">
+            <a href="/" id="fahrenheit-link">
               °F
             </a>
           </span>
