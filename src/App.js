@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
 import CurrentTemperature from "./CurrentTemperature";
+import CurrentInformation from "./CurrentInformation";
+import Search from "./Search";
+import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -33,93 +36,15 @@ export default function App() {
         <div className="container">
           <section className="card card-current current">
             <CurrentTemperature />
-            <div className="current-information">
-              <ul className="row">
-                <li className="col-3">
-                  <span className="variables-border-identifier temperature-information"></span>
-                  <div className="margin-left-12">
-                    Temperature <br />
-                    <i className="fas fa-temperature-low"></i>
-                    <span className="temperature-Min">12</span>
-                    <span className="temp-type">°C</span> /
-                    <strong>
-                      <span className="temperature-Max">24</span>
-                      <span className="temp-type">°C</span>
-                    </strong>
-                    <i className="fas fa-temperature-high"></i>
-                  </div>
-                </li>
-                <li className="col-3">
-                  <span className="variables-border-identifier uv"></span>
-                  <div className="margin-left-12">
-                    Feels Like
-                    <br />
-                    <i className="fas fa-feather-alt"></i>
-                    <span className="feel-like">18°</span>
-                  </div>
-                </li>
-                <li className="col-3">
-                  <span className="variables-border-identifier"></span>
-                  <div className="margin-left-12">
-                    Humidity
-                    <br />
-                    <i className="fas fa-tint"></i>
-                    <span className="humidity"> 17 %</span>
-                  </div>
-                </li>
-                <li className="col-3">
-                  <span className="variables-border-identifier wind"></span>
-                  <div className="margin-left-12">
-                    Wind
-                    <br />
-                    <i className="fas fa-wind"></i>
-                    <span className="wind-speed">WSW 14 km/h</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            <CurrentInformation />
           </section>
-          <section className="card forecast">
-            <form id="search-city">
-              <input
-                type="text"
-                className="input-search"
-                placeholder="Enter another city"
-              />
-              <input
-                type="submit"
-                className="btn btn-outline-secondary"
-                value="Search"
-              />
-              <input
-                type="button"
-                id="current-city-btn"
-                className="btn btn-outline-secondary"
-                value="Current City"
-              />
-            </form>
+          <section className="card Search">
+            <Search />
+          </section>
+          <section className="Footer">
+            <Footer />
           </section>
         </div>
-        <p className="text-center">
-          <a
-            href="https://github.com/Flaviamol/Weather-project"
-            target="_blank"
-            rel="noreferrer"
-            className="link-open-source"
-          >
-            Open-Source code
-          </a>
-          by Flávia Mól and
-          <a
-            href="https://nifty-yalow-6e0e37.netlify.app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            hosted on Netlify
-          </a>
-          .
-        </p>
-
         <script src="src/index.js"></script>
       </body>
     </div>

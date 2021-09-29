@@ -1,0 +1,16 @@
+.Search {
+    margin: 15px 0px 0px 0px;
+  }
+  
+  .Search ul {
+    list-style: none;
+  }
+  
+  .Search .input-search {
+    width: 300px;
+  }
+  
+  .Search .btn {
+    position: relative;
+  }
+  

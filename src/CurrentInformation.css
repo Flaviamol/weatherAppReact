@@ -1,0 +1,56 @@
+.CurrentInformation {
+    font-size: 18px;
+  }
+  
+  .CurrentInformation ul {
+    list-style: none;
+  }
+  
+  .CurrentInformation .fa-temperature-low {
+    color: #90cbf8;
+  }
+  
+  .CurrentInformation .fa-temperature-high {
+    color: #de675a;
+  }
+  
+  .CurrentInformation .fa-feather-alt {
+    color: #fcf876;
+  }
+  
+  .CurrentInformation .fa-tint {
+    color: #90cbf8;
+  }
+  
+  .CurrentInformation .fa-wind {
+    color: #b7b6b6;
+  }
+  
+  .CurrentInformation span.variables-border-identifier {
+    border: 3px solid;
+    width: 6px;
+    border-radius: 3px;
+    height: 50px;
+    float: left;
+  }
+  
+  .CurrentInformation .margin-left-12 {
+    margin-left: 12px;
+  }
+  
+  .CurrentInformation span.CurrentInformation {
+    border-color: #de675a;
+  }
+  
+  .CurrentInformation span.uv {
+    border-color: #fcf876;
+  }
+  
+  .CurrentInformation span.humidity {
+    border-color: #90cbf8;
+  }
+  
+  .CurrentInformation span.wind {
+    border-color: #b7b6b6;
+  }
+  
