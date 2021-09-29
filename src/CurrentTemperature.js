@@ -2,15 +2,23 @@ import React from "react";
 import "./CurrentTemperature.css";
 
 export default function CurrentTemperature() {
+  let weatherData = {
+    city: "New York",
+    weekDay: "Monday",
+    hour: "09:00 am",
+    description: "Clear and Shine",
+    imgUrl: "http://openweathermap.org/img/wn/01d@2x.png",
+    temperature: "26"
+  };
   return (
     <div className="CurrentTemperature">
       <h1>
-        <span className="city-name">Lyon</span>, Weather
+        <span>{weatherData.city}</span>, Weather
       </h1>
-      <h2 className="current-subtitle">Monday 09:00 am</h2>
+      <h2 className="current-subtitle">{weatherData.weekDay} {weatherData.hour}</h2>
       <div className="row">
         <div className="col-4 text-center">
-          <span className="current-temperature">26</span>
+          <span className="current-temperature">{weatherData.temperature}</span>
           <span id="temp-type">
             <a href="/" id="celsius-link" className="active">
               °C
@@ -22,12 +30,12 @@ export default function CurrentTemperature() {
           </span>
         </div>
         <div className="col-4 text-center">
-          <h3>Clear and Shine</h3>
+          <h3>{weatherData.description}</h3>
         </div>
         <div className="col-4 text-center">
           <img
-            src="http://openweathermap.org/img/wn/01d@2x.png"
-            alt="clear"
+            src={weatherData.imgUrl}
+            alt={weatherData.description}
             className="current-icon"
           />
         </div>
