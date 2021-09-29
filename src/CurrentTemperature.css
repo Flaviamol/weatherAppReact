@@ -1,0 +1,25 @@
+.CurrentTemperature .current-temperature {
+  font-size: 64px;
+}
+
+.CurrentTemperature .current-icon {
+  margin-top: -85px;
+  width: 150px;
+  height: 150px;
+}
+
+.CurrentTemperature .celsius-link,
+.CurrentTemperature .fahrenheit-link {
+  color: #e8eae6;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.CurrentTemperature #temp-type .active {
+  color: #e8eae6;
+  cursor: default;
+}
+
+.CurrentTemperature #temp-type .active:hover {
+  text-decoration: none;
+}
