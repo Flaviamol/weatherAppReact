@@ -6,15 +6,15 @@ export default function Footer() {
     <div className="Footer">
       <p className="text-center">
         <a
-          href="https://github.com/Flaviamol/Weather-project"
+          href="https://github.com/Flaviamol/weatherAppReact"
           target="_blank"
           rel="noreferrer"
           className="link-open-source"
         >
           Open-Source code{" "}
         </a>
-        by Flávia Mól and
-        <a
+        by Flávia Mól
+        {/* <a
           href="https://nifty-yalow-6e0e37.netlify.app"
           target="_blank"
           rel="noreferrer"
@@ -22,7 +22,7 @@ export default function Footer() {
         >
           {" "}
           hosted on Netlify{" "}
-        </a>
+        </a> */}
         .
       </p>
     </div>

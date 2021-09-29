@@ -8,11 +8,13 @@
   height: 150px;
 }
 
-.CurrentTemperature .celsius-link,
-.CurrentTemperature .fahrenheit-link {
+.CurrentTemperature #celsius-link,
+.CurrentTemperature #fahrenheit-link {
   color: #e8eae6;
   font-size: 16px;
   line-height: 36px;
+  text-decoration: none;
+  color: #90cbf8;
 }
 
 .CurrentTemperature #temp-type .active {
