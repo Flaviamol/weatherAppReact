@@ -2,6 +2,13 @@ import React from "react";
 import "./CurrentInformation.css";
 
 export default function CurrentInformation() {
+  let weatherDataInfo = {
+    temperatureMin = "12",
+    temperatureMax = "24",
+    feelLike = "18",
+    humidity = "17",
+    wind = "14"
+  };
   return (
     <div className="CurrentInformation">
       <ul className="row">
@@ -10,10 +17,10 @@ export default function CurrentInformation() {
           <div className="margin-left-12">
             Temperature <br />
             <i className="fas fa-temperature-low"></i>
-            <span className="temperature-Min">12</span>
+            <span className="temperature-Min">{weatherDataInfo.temperatureMin}</span>
             <span className="temp-type">°C</span> /
             <strong>
-              <span className="temperature-Max">24</span>
+              <span className="temperature-Max">{weatherDataInfo.temperatureMax}</span>
               <span className="temp-type">°C</span>
             </strong>
             <i className="fas fa-temperature-high"></i>
@@ -25,7 +32,7 @@ export default function CurrentInformation() {
             Feels Like
             <br />
             <i className="fas fa-feather-alt"></i>
-            <span className="feel-like">18°</span>
+            <span className="feel-like">{weatherDataInfo.feelLike}°</span>
           </div>
         </li>
         <li className="col-3">
@@ -34,7 +41,7 @@ export default function CurrentInformation() {
             Humidity
             <br />
             <i className="fas fa-tint"></i>
-            <span className="humidity"> 17 %</span>
+            <span className="humidity"> {weatherDataInfo.humidity} %</span>
           </div>
         </li>
         <li className="col-3">
@@ -43,7 +50,7 @@ export default function CurrentInformation() {
             Wind
             <br />
             <i className="fas fa-wind"></i>
-            <span className="wind-speed">WSW 14 km/h</span>
+            <span className="wind-speed">WSW {weatherDataInfo.wind} km/h</span>
           </div>
         </li>
       </ul>
